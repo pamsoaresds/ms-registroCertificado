@@ -1,9 +1,12 @@
 {
   "name": "ms-registrocertidao",
   "version": "1.0.0",
-  "description": "",
+  "description": "Microsserviço de cadastro de serviços",
   "main": "index.js",
   "dependencies": {
+    "eureka-js-client": "^4.5.0",
+    "ip": "^1.1.5",
+    "request": "^2.88.0",
     "cors": "^2.8.5",
     "dotenv-safe": "^8.2.0",
     "sha256": "^0.2.0",
@@ -22,15 +25,9 @@
     "multer-gridfs-storage": "1.0.0",
     "supertest": "^4.0.2"
   },
-  "devDependencies": {
-    "tap-spec": "^5.0.0",
-    "tape": "^4.11.0"
-  },
-  "engines": {
-    "npm": "5.4.0"
-  },
+  "devDependencies": {},
   "scripts": {
-    "start": "nodemon index",
+    "start": "node index",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
