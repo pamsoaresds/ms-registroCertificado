@@ -34,6 +34,9 @@
     "type": "git",
     "url": "git+https://github.com/pamsoaresds/ms-registroCertificado.git"
   },
+  "engines": {
+     "npm": "5.4.x" /* latest version*/
+  },
   "author": "",
   "license": "ISC",
   "bugs": {
