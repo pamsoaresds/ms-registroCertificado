@@ -25,7 +25,7 @@ function start(api, repository, callback) {
 
     api(app, repository);
 
-    server = app.listen(parseInt(PORT),
+    server = app.listen(process.env.PORT || parseInt(PORT),
     () => callback(null, server));
 }
 
