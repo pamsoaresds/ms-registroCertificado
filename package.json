@@ -26,6 +26,9 @@
     "tap-spec": "^5.0.0",
     "tape": "^4.11.0"
   },
+  "engines": {
+    "npm": "5.4.0"
+  },
   "scripts": {
     "start": "nodemon index",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -33,9 +36,6 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pamsoaresds/ms-registroCertificado.git"
-  },
-  "engines": {
-     "npm": "5.4.x" /* latest version*/
   },
   "author": "",
   "license": "ISC",
