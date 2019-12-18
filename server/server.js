@@ -6,7 +6,7 @@ const morgan = require('morgan');
 const helmet = require('helmet');
 var cors = require('cors');
 var server = null;
-const PORT =3005;
+const PORT = process.env.PORT || parseInt(3005);
 
 
 function start(api, repository, callback) {
@@ -25,7 +25,7 @@ function start(api, repository, callback) {
 
     api(app, repository);
 
-    server = app.listen(process.env.PORT || parseInt(PORT),
+    server = app.listen(PORT,
     () => callback(null, server));
 }
 
